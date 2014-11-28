@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+
 <div class="starter-template">
-  <h1>Nothing here yet...</h1>
-  <p class="lead">Better get crackin'!!</p>
-</div>
+  <h1>This song just... Never Ends</h1>
+  <p class="lead"> oh god</p>
+   <figure> <%= image_tag "Verse1.jpg", size: "300" %>
+   <figcaption> <button style="padding: 10px"> <%= link_to "NEXT ", "verse-2" %>
+  </button>
+   </figcaption>
+   </figure>
+
+ <embed src="audios/lcpa.mp3 " auto loop="true"
+    hidden="true">
+
+   <%= audio_tag("audios/lcpa.mp3", autoplay: true, controls: true) %>
+
+ </div>

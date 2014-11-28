@@ -9,9 +9,21 @@
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
+
+  <center>
   <body>
-    <div class="container text-center">
-      <%= yield %>
-    </div>
+    <ul class="nav nav-tabs nav-justified" style="center">
+  <li role="presentation" class="active"><%= link_to('Home', "root") %></li>
+  <li role="presentation" class="active"><%= link_to('Verse 2', "verse-2") %></li>
+  <li role="presentation" class="active"><%= link_to('Verse 3', "verse-3") %></li>
+  <li role="presentation" class="active"><%= link_to('Verse 4', "verse-4") %></li>
+  <li role="presentation" class="active"><%= link_to('Youtube', "youtube") %></li>
+</ul>
+</ul>
+  <%= yield %>
+
   </body>
+</center>
+
+
 </html>
